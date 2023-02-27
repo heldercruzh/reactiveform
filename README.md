@@ -1,4 +1,4 @@
-# Simple Reactiveform (Angular) with two fields and a random identifier from 0 to 9 (with karma tests)
+# Reactiveform (Angular) with two fields and a random identifier from 0 to 9 (with karma tests)
 
 ## Configure
 
