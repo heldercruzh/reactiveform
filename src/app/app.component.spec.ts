@@ -10,22 +10,16 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('randomIntFromInterval(1, 9) - should generate number less than ten', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app.randomIntFromInterval(1, 9)).toBeLessThan(10);
   });
 
-  it(`should have as title 'reactiveform'`, () => {
+  it('randomIntFromInterval(1, 9) - should generate number greater than zero', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('reactiveform');
+    expect(app.randomIntFromInterval(1, 9)).toBeGreaterThan(0);
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('reactiveform app is running!');
-  });
 });
